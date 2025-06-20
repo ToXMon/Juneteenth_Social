@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juneteenth: Freedom, Food, and Fellowship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('2025-NMAAHC-Juneteenth-virtual-background.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; /* Keeps background fixed during scroll */
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        .card-link {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Style for the header background image */
+        .header-bg {
+            /* IMPORTANT FOR DEPLOYMENT:
+               This line expects the image file to be in the same folder as this HTML file.
+               When you deploy to GitHub Pages, make sure you upload 
+               '2025-NMAAHC-Juneteenth-virtual-background.png' to your repository.
+            */
+            background-image: url('2025-NMAAHC-Juneteenth-virtual-background.png');
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto max-w-4xl">
+
+        <!-- Header Section with Background Image -->
+        <header class="text-center text-white p-6 rounded-b-lg shadow-lg h-64 sm:h-72 flex flex-col justify-center items-center">
+            <h1 class="text-4xl md:text-5xl font-bold [text-shadow:2px_2px_4px_rgba(0,0,0,0.7)]">A Juneteenth Commemoration</h1>
+            <p class="text-lg mt-2 [text-shadow:1px_1px_3px_rgba(0,0,0,0.7)]">Hosted by the Raritan AALC</p>
+            <p class="text-md mt-4 italic [text-shadow:1px_1px_3px_rgba(0,0,0,0.7)]">Freedom, Food, and Fellowship</p>
+        </header>
+
+        <main class="p-4 sm:p-6 md:p-8">
+            <!-- Agenda Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-4 border-b pb-2">Evening Agenda</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start"><strong class="w-32">5:00 PM:</strong> <span>Arrival & Mingling</span></li>
+                    <li class="flex items-start"><strong class="w-32">5:30 PM:</strong> <span>Welcome Remarks</span></li>
+                    <li class="flex items-start"><strong class="w-32">5:45 PM:</strong> <span>Social Appetizers & Drinks</span></li>
+                    <li class="flex items-start"><strong class="w-32">6:45 PM:</strong> <span>Closing Remarks & Final Mingle</span></li>
+                    <li class="flex items-start"><strong class="w-32">7:00 PM:</strong> <span>Event Concludes</span></li>
+                </ul>
+            </div>
+
+            <!-- Digital Griot: Conversation Starters -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-center">Digital Griot: Spark a Conversation</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <a href="https://www.searchablemuseum.com/film-of-a-juneteenth-parade-from-1925/" target="_blank" class="card-link bg-white rounded-lg shadow-md p-6 block text-center">
+                        <h3 class="font-semibold text-lg mb-2">The Sound of Freedom</h3>
+                        <p class="text-sm text-gray-600">Watch a silent film of a 1925 Juneteenth parade and reflect on the power of public celebration.</p>
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="https://news.yale.edu/2020/06/19/celebrating-juneteenth-solomon-sir-jones-films" target="_blank" class="card-link bg-white rounded-lg shadow-md p-6 block text-center">
+                        <h3 class="font-semibold text-lg mb-2">Preserving the Story</h3>
+                        <p class="text-sm text-gray-600">Learn about Rev. Solomon Sir Jones, who documented Black life in the 1920s.</p>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="https://nmaahc.si.edu/explore/moments/juneteenth" target="_blank" class="card-link bg-white rounded-lg shadow-md p-6 block text-center">
+                        <h3 class="font-semibold text-lg mb-2">The Historical Journey</h3>
+                        <p class="text-sm text-gray-600">Explore the historical legacy of Juneteenth and its long path to national recognition.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AALC Feedback Form -->
+            <div class="bg-green-800 text-white rounded-lg shadow-xl p-8 text-center">
+                <h2 class="text-3xl font-bold mb-3">Help Shape Our Future</h2>
+                <p class="mb-6">Your voice is crucial to our growth. Please take a moment to share your feedback to help us foster a greater sense of culture and belonging.</p>
+                <a href="#" id="feedback-link" class="bg-white text-green-800 font-bold py-3 px-8 rounded-full inline-block text-lg hover:bg-gray-200 transition-colors">Take the Survey</a>
+            </div>
+
+            <footer class="text-center mt-8 text-sm text-gray-500">
+                <p>&copy; 2025 Raritan AALC | Juneteenth Celebration</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // In a real scenario, you would replace this '#' with the actual link to your Microsoft Form.
+        const feedbackFormURL = 'https://forms.office.com/r/mfhBHUE0na'; // Microsoft Forms survey link
+        document.getElementById('feedback-link').href = feedbackFormURL;
+
+
+    </script>
+
+</body>
+</html>
